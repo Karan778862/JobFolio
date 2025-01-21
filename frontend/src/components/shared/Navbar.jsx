@@ -36,8 +36,8 @@ const Navbar = () => {
     }
   };
   return (
-    <div className="bg-white shadow-md">
-      <div className="flex items-center justify-between mx-auto max-w-7xl h-16 ">
+    <div className="bg-white shadow-md ">
+      <div className=" p-2 flex items-center justify-between mx-auto max-w-7xl h-16 ">
         <div className="flex items-center gap-3 ">
           <div className=" rounded-full">
             <img className=" " src={logo} alt="" width={200} height={100} />
@@ -49,6 +49,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-12">
           <ul className="flex font-medium  items-center gap-5">
+            
             {user && user.role == "recruiter" ? (
               <>
                 <li>
@@ -58,8 +59,9 @@ const Navbar = () => {
                   <Link to="/admin/jobs">Jobs</Link>
                 </li>
               </>
-            ) : (
-              <>
+             ) : (
+              
+              <div className={`flex  gap-3 ${user ? "" : "hidden" }`} >
                 <li>
                   <Link to="/">Home</Link>
                 </li>
@@ -69,7 +71,7 @@ const Navbar = () => {
                 <li>
                   <Link to="/browse">Browse</Link>
                 </li>
-              </>
+              </div>
             )}
           </ul>
           {!user ? (

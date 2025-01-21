@@ -32,7 +32,7 @@ const CategoryCarousel = () => {
     }
   return (
     <div>
-      <Carousel className="w-full max-w-xl mx-auto my-20 shadow-sm  rounded-full">
+      <Carousel className="max-w-60  md:max-w-xl mx-auto my-2 md:my-20 shadow-sm  rounded-full">
         <CarouselContent>
           {category.map((cat, index) => (
             <CarouselItem key={index} className=" md:basis-1/3 lg:basis-1/3">

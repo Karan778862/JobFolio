@@ -26,7 +26,7 @@ const Companies = () => {
             placeholder="Filter by Name"
             onChange={(e) => setInaput(e.target.value)}
           />
-          <Button onClick={() => navigate("/admin/companies/create")}>
+          <Button className="bg-[#ff8931] hover:bg-[#f89e59]" onClick={() => navigate("/admin/companies/create")}>
             New Company
           </Button>
         </div>

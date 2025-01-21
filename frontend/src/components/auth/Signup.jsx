@@ -75,10 +75,10 @@ const Signup = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex items-center justify-center max-w-7xl mx-auto">
+      <div className=" p-2 flex items-center justify-center max-w-7xl mx-auto">
         <form
           onSubmit={submitHandler}
-          className="w-1/2 border border-gray-300 rounded-md p-4 my-10"
+          className="md:w-1/2 border border-gray-300 rounded-md p-4 my-10"
         >
           <h1 className="font-bold text-xl mb-5">Sign up</h1>
           <div>
@@ -121,7 +121,7 @@ const Signup = () => {
               placeholder="passwpord"
             ></Input>
           </div>
-          <div className=" flex items-center justify-between">
+          <div className="  grid grid-cols-2 md:grid-cols-3 items-center justify-between">
             <RadioGroup className="flex items-center gap-4 my-5">
               <div className="flex items-center space-x-2">
                 <Input

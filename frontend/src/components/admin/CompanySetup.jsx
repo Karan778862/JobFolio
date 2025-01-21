@@ -139,7 +139,7 @@ const CompanySetup = () => {
                         </div>
                     </div>
                     {
-                        loading ? <Button className="w-full my-4 bg-[#ff8931] hover:bg-[#f3a76c]"> <Loader2 className='mr-2 h-4 w-4 animate-spin bg-[#ff8931] hover:bg-[#ff8931]' /> Please wait </Button> : <Button type="submit" className="w-full my-4">Update</Button>
+                        loading ? <Button className="w-full my-4 bg-[#ff8931] hover:bg-[#f89e59]"> <Loader2 className='mr-2 h-4 w-4 animate-spin bg-[#ff8931] hover:bg-[#f89e59]' /> Please wait </Button> : <Button type="submit" className="w-full my-4">Update</Button>
                     }
                 </form>
             </div>

@@ -29,7 +29,7 @@ export const AdminJobs = () => {
               placeholder="Filter by Name, role"
               onChange={(e) => setInaput(e.target.value)}
             />
-            <Button onClick={()=>navigate("/admin/jobs/create")}>
+            <Button onClick={()=>navigate("/admin/jobs/create")} className="bg-[#ff8931] hover:bg-[#f89e59]">
               New Jobs
             </Button>
           </div>

@@ -4,6 +4,7 @@ import Job from "./Job";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import sort from "../assets/sort.png"
 
 const Jobs = () => {
   const { allJobs, searchQuery } = useSelector((store) => store.job);
@@ -27,15 +28,18 @@ const Jobs = () => {
     <div>
       <Navbar />
       <div className="max-w-7xl mx-auto mt-5">
+          {/* <div className="w-10">
+            <img src={sort} alt="" sizes="icon" />
+          </div> */}
         <div className="flex gap-5">
-          <div className="w-[20%]">
+          <div className="w-[20%] z-20">
             <FilterCard />
           </div>
           {filterJobs.length <= 0 ? (
             <span>Job not Found!</span>
           ) : (
             <div className="flex-1 h-[88vh] overflow-y-auto pb-5">
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid p-4 grid-col-1 md:grid-cols-3 gap-4">
                 {filterJobs.map((job) => (
                   <motion.div
                     initial={{ opacity: 0, x: 100 }}
